@@ -1,0 +1,16 @@
+<nav>
+    <div>
+        <ul>
+          <li><a href="{% url 'index' %}">CHAT</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'logout' %}">LOGOUT</a></li>
+            {% else %}
+            <li><a href="{% url 'signin' %}">LOGIN</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>

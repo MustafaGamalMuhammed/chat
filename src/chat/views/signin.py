@@ -15,7 +15,7 @@ def signin(request):
                     request, username=username, password=password)
             if user is not None:
                 auth.login(request, user)
-                return redirect('home')
+                return redirect('index')
             else:
                 messages.error(request, 'Wrong username or password')
         else:
@@ -26,7 +26,7 @@ def signin(request):
         'form': AuthenticationForm(),
     }
 
-    return render(request, 'ecommerce/signin.html', context=context)
+    return render(request, 'chat/signin.html', context=context)
 
 
 @login_required

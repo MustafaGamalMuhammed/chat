@@ -17,4 +17,4 @@ def signup(request):
         'form': SignupForm(),
     }
 
-    return render(request, 'ecommerce/signup.html', context=context)
+    return render(request, 'chat/signup.html', context=context)
