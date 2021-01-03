@@ -1,0 +1,79 @@
+#app {
+  height: 100vh;
+}
+
+.index {
+  display: flex;
+  justify-content: space-between;
+  height: 90%;
+}
+
+.left {
+  width: 20%;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.right {
+  width: 75%;
+}
+
+.search input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.contacts table {
+  width: 100%;
+}
+
+.choices td {
+  width: 50%;
+  padding: 5px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.choices td:hover {
+  cursor: pointer;
+}
+
+.room {
+  height: 100%;
+}
+
+.room .options,
+.room .chat {
+  border: 1px solid black;
+}
+
+.room .options {
+  height: 5%;
+}
+
+.room .chat {
+ height: 95%;
+ border-top: none;
+}
+
+.chat .messages {
+  height: 90%
+}
+
+.chat .message-input {
+  height: 10%;
+}
+
+.message-input input {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-top: 1px solid black;
+  padding: 5px;
+  font-size: 20px;
+}
