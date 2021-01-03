@@ -125,5 +125,9 @@ STATIC_ROOT = BASE_DIR / 'static/'
 
 # Media files
 
-STATIC_URL = '/media/'
-STATIC_ROOT = BASE_DIR / 'media/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media/'
+
+# LOGIN_URL
+
+LOGIN_URL = 'signin'

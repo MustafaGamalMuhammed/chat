@@ -12,6 +12,11 @@ auth_urlpatterns = [
     path('signup/', views.signup, name="signup"),
 ]
 
+search_urlpatterns = [
+    path('search/<str:q>/', views.search, name="search"),
+]
+
 urlpatterns = []
 urlpatterns.extend(auth_urlpatterns)
+urlpatterns.extend(search_urlpatterns)
 urlpatterns.extend(index_urlpatterns)

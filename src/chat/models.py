@@ -4,8 +4,8 @@ from PIL import Image
 
 
 class Profile(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    friends = models.ManyToManyField("Profile")
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    friends = models.ManyToManyField("Profile", blank=True)
     image = models.ImageField(upload_to="profile_pics", default="default.jpg")
 
     def __str__(self):
