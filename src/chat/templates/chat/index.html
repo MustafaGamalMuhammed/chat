@@ -5,7 +5,12 @@
   <div class="left">
     <div class="search">
       <input @keyup="search" type="text" class="search-input" placeholder="search..."/>
-      <div class="search-results"></div>
+      <table class="search_results">
+        <tr v-for="result in searchResults">
+          <td><span v-html="result.username"></span></td>
+          <td><i @click="createFriendshipRequest(result.id)" class="fas fa-user-plus"></i></td>
+        </tr>
+      </table>
     </div>
     <div class="contacts">
       <table>

@@ -4,6 +4,14 @@ from . import views
 
 index_urlpatterns = [
     path('', views.index, name="index"),
+    path(
+        'create_friendship_request/', 
+        views.create_friendship_request, 
+        name="create_friendship_request"),
+    path(
+        'accept_friendship_request/', 
+        views.accept_friendship_request, 
+        name="accept_friendship_request"),
 ]
 
 auth_urlpatterns = [
